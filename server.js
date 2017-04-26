@@ -12,8 +12,8 @@ var request = require('request'),
 	mongoosePaginate = require('mongoose-paginate');
 
 //configuration//
-var uristring = process.env.MONGOLAB_URI
-mongoose.connect(uristring);
+
+mongoose.connect(process.env.MONGOLAB_URI);
 	app.use(express.static(path.normalize(__dirname) + '/views'))
 	app.use(morgan('dev')); // log every request to the console
 	app.use(bodyParser());// pull information from html in POST
