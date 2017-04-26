@@ -1,9 +1,0 @@
-<% for(var i = 0; i < postModels.length ; i++) { %>
-<div>
-<%= postModels[i].title%>
-<a href = "/bestdelete/<%= postModels[i].id%>/delete">delete</a>
-<%= postModels[i].video_url %>
-<%= postModels[i].posted.toLocaleDateString() %>
-<%= postModels[i].numClicks %>
-               </div>
-       <% }%>

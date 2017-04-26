@@ -149,8 +149,8 @@ $('a.back-to-top').click(function() {
                 <img class="img-responsive" src="<%= issuepostModels[i].img_url[0] || issuepostModels[i].img_url[1] || issuepostModels[i].video_url[1] %>" alt="이미지 로딩중...">
                 <div class="text-center">
                   <h5><%= issuepostModels[i].title %></h5>
-                   <h7><span class="glyphicon glyphicon-comment"></span> &nbsp&nbsp<%=issuepostModels[i].userComments.length + issuepostModels[i].comments.length %></h7>&nbsp&nbsp
-                   <h7><span class="glyphicon glyphicon-eye-open"></span> &nbsp&nbsp&nbsp<%= issuepostModels[i].usernumClicks + issuepostModels[i].numClicks %></h7>&nbsp&nbsp
+                   <h7><span class="glyphicon glyphicon-comment"></span> &nbsp&nbsp<%=issuepostModels[i].userComments.length  %></h7>&nbsp&nbsp
+                   <h7><span class="glyphicon glyphicon-eye-open"></span> &nbsp&nbsp&nbsp<%= issuepostModels[i].myClicks  %></h7>&nbsp&nbsp
                   <% if (issuepostModels[i].numClicks +issuepostModels[i].usernumClicks >15000) { %> 
                     <b><span class="label label-danger">Hot</span></b>
                   <% } %> 
