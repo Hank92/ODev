@@ -459,20 +459,6 @@ var myVar = <%- JSON.stringify(issuepostModels) %>;
 
 
 <% for(var i = issuepostModel.length-1; i > -1 ; i--) { %>
-        <% if (issuepostModel[i].nickname == 'ada') { %>
-
-          <a href ="<%= issuepostModel[i].url %>" class="thumbnail" style="text-decoration: none;" >
-
-          <h7><%= issuepostModel[i].posted.toLocaleDateString() %></h7>
-              <img class="img-responsive" src="<%= issuepostModel[i].img_url[0] || issuepostModel[i].video_url[1] %>" alt="이미지 로딩중...">
-
-              <div class="text-center">
-                <h5><%= issuepostModel[i].title %></h5>
-
-              </div>
-              </a>
-
-          <% } else { %>
 
             <a href ="/<%= issuepostModel[i]._id %>" class="thumbnail" data-toggle="modal" data-target="#bsPhotoGalleryModal" style="text-decoration: none;" onclick= "getModalSorted( <%= i %>)">
 
@@ -487,7 +473,7 @@ var myVar = <%- JSON.stringify(issuepostModels) %>;
 
                 </div>
                 </a>
-        <% } %>
+
        <% } %>
 
        </div>
@@ -538,6 +524,23 @@ var myVar = <%- JSON.stringify(issuepostModels) %>;
 </div>
 
 
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10950271;
+var sc_invisible=0;
+var sc_security="b7184453";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="website
+statistics" href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/10950271/0/b7184453/0/"
+alt="website statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
 
 </body>
 

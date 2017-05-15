@@ -1,0 +1,32 @@
+<!-- views/post_create.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title> 하즐 - 하루의 즐거움 <% if (currentPage > 1) { %> <%= currentPage %> <% } %></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="naver-site-verification" content="8672f68ec19974757430dcc41aa887462bd2a8c5"/>
+    <meta name="google-site-verification" content="dj23_T0fknqVakUk-BB6mLki7imRrvEhQrS4D35d1_Y" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content ="하즐">
+    <meta name="title" content = "하즐 - 하루의 즐거움">
+    <meta name='keyword' content="하즐, 하루, 즐거움, 짤, hazzul, 웃긴, 예능, 동영상, hazz, hazzu">
+    <meta name="description" content="하루를 즐겁게 해줄 짤들과 동영상을 담은 플랫폼">
+    <link rel='shortcut icon' href='/images/Favicon.ico' type='image/x-icon'/ >
+
+    <!--call the css file -->
+    <link rel='stylesheet' href='/css/hazzulMain.css'>
+</head>
+<body>
+  <form method ="post" enctype="multipart/form-data">
+    <input type = "file" name = "myimage" />
+    <input type = "submit" name = "submit" value = "submit">
+  </form>
+</body>
+</html>

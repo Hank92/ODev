@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 
 var hazzulSchema = mongoose.Schema({
-    title: String, 
+  title: String,
 	url  : String,
 	img_url: [String],
 	img_comment: [String],
@@ -17,7 +17,9 @@ var hazzulSchema = mongoose.Schema({
 	}],
 	userComments: [{
 		userPost: String
-	}]
+	}],
+  nickname: String,
+  type: String
 
      });
 
